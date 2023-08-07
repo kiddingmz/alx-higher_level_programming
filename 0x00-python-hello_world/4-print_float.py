@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 number = 3.14159
-out = f"{number:.2f}"
+out = "%.2f" %number
 print(out)
