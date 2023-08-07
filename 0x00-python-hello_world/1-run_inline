@@ -1,4 +1,2 @@
 #!/bin/bash
-echo "#!/usr/bin/python3" > temp.py
-echo $PYCODE >> temp.py
-python3 temp.py
+python3 -c "$PYCODE"
