@@ -20,7 +20,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
 
     a, b = int(args[1]), int(args[3])
-   
+
     if operator == operators[0]:
         print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
     elif operator == operators[1]:
@@ -28,6 +28,6 @@ if __name__ == "__main__":
     elif operaror == operators[2]:
         print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
     else:
-        print("{:d} / {:d} = {:.2f}".format(a, b, div(a, b)))
+        print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
 
     sys.exit(0)
