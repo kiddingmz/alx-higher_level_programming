@@ -10,4 +10,4 @@ if __name__ == "__main__":
     )
 
     for arg in range(1, length):
-        print("{:d}: {:s}".format(arg, sys.argv[arg]))
+        print("{:d}: {}".format(arg, sys.argv[arg]))
