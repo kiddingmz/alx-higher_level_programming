@@ -6,7 +6,7 @@ if __name__ == "__main__":
 
     print("{:d} {:s}".format(
         (length - 1),
-        "arguments." if length == 1 else "arguments:"    
+        "arguments." if length == 1 else "arguments:"
     ))
 
     for arg in range(1, length):
