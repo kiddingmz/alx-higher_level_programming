@@ -4,7 +4,7 @@ if __name__ == "__main__":
 
     length = len(sys.argv)
 
-    print("{:d} {:s}".format(
+    print("{} {}".format(
         (length - 1),
         "arguments." if length == 1 else "arguments:"
     ))
@@ -12,5 +12,5 @@ if __name__ == "__main__":
     length = 0
     for arg in sys.argv:
         if length != 0:
-            print("{:d}: {:s}".format(length, arg))
+            print("{}: {}".format(length, arg))
         length += 1
