@@ -9,5 +9,5 @@ if __name__ == "__main__":
         "arguments." if length == 1 else "arguments:"
     ))
 
-    for arg in range(1, length):
-        print("{:d}: {:s}".format(arg, sys.argv[arg]))
+    for arg in range(1, len(sys.argv)):
+            print("{:d}: {:s}".format(arg, sys.argv[arg]))
