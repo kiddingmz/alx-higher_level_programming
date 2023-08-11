@@ -6,11 +6,10 @@ if __name__ == "__main__":
 
     print("{} {}".format(
         (length - 1),
-        "arguments." if length == 1 else "arguments:"
+        "arguments." if length == 1 else (
+            "argument:" if length == 2 else "arguments:"
+            )
     ))
 
-    length = 0
-    for arg in sys.argv:
-        if length != 0:
-            print("{}: {}".format(length, arg))
-        length += 1
+    for arg in range(1, length):
+        print("{:d} {:s}".format(arg, sys.argv[arg]))
