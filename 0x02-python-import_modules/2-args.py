@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-import sys as system
+if __name__ == "__main__":
+    import sys as system
 
-argv = system.argv
-length = len(argv)
+    argv = system.argv
+    length = len(argv)
+    txt = "arguments." if length == 1 else "argumentes:" 
+    print("{:d} {txt}".format(length - 1, txt=txt))
 
-print("{:d} arguments:".format(length - 1))
-
-for arg in range(1, length):
-    print("{:d}: {:s}".format(arg, argv[arg]))
+    for arg in range(1, length):
+        print("{:d}: {:s}".format(arg, argv[arg]))
