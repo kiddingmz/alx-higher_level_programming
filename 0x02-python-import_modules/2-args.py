@@ -4,7 +4,7 @@ if __name__ == "__main__":
 
     length = len(sys.argv)
 
-    print("{} {}".format(
+    print("{:d} {:s}".format(
         (length - 1),
         "arguments." if length == 1 else (
             "argument:" if length == 2 else "arguments:"
@@ -12,4 +12,4 @@ if __name__ == "__main__":
     ))
 
     for arg in range(1, length):
-        print("{:d} {:s}".format(arg, sys.argv[arg]))
+        print("{:d}: {:s}".format(arg, sys.argv[arg]))
