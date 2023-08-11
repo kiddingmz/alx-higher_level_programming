@@ -28,6 +28,4 @@ if __name__ == "__main__":
     elif operaror == operators[2]:
         print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
     else:
-        print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
-
-    sys.exit(0)
+        print("{:d} / {:d} = {}".format(a, b, div(a, b)))
