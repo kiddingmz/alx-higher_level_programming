@@ -5,10 +5,8 @@
  * print_python_list_info - prints python list info
  *
  * @p: PyObject
- *
- * Return: nothing
+ * Return: no return
  */
-
 void print_python_list_info(PyObject *p)
 {
 	long int size, i;
@@ -23,6 +21,6 @@ void print_python_list_info(PyObject *p)
 	for (i = 0; i < size; i++)
 	{
 		item = PyList_GetItem(p, i);
-		printf("Element %ld: %s\n", i, Py_TYPE(item)->tp_name);
+ 		printf("Element %ld: %s\n", i, Py_TYPE(item)->tp_name);
 	}
 }
