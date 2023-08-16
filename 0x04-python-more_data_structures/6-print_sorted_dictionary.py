@@ -5,4 +5,4 @@ def print_sorted_dictionary(a_dictionary):
 
         for item in aux_d:
             k, v = item
-            print("{0}: {1}".format(k,v))
+            print("{0}: {1}".format(k, v))
