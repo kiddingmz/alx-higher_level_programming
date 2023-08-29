@@ -16,8 +16,8 @@ class Square:
         """
         self.size(size)
         self.position(position)
-        self.__size = self.size()
-        self.__position = self.position()
+        self.__size = self.size
+        self.__position = self.position
 
     def area(self) -> int:
         """Define the area for the square.
