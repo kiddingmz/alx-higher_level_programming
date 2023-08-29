@@ -3,6 +3,7 @@
 
 
 class Square:
+    """Represent the class square."""
     def __init__(self, size):
         """Initialization constrution.
 
