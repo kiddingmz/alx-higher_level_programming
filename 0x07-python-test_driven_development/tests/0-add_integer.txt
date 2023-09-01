@@ -1,0 +1,79 @@
+# 0-add_integer.txt
+
+How to use 0-add_integer.py
+===========================
+
+This module represent the add function
+
+Usage
+=====
+
+Importing function from the module:
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+# Testing the integer values
+
+	>>> add_integer(10, 10)
+	20
+
+	>>> add_integer(-10)
+	88
+
+	>>> add_integer(-10, 10)
+	0
+
+# Testing values between integer and float
+
+	>>> add_integer(-8.9)
+	80
+
+	>>> add_integer(10, -9.2)
+	1
+
+	>>> add_integer(-11.3, -1.7)
+	10
+
+# Testing non numbers
+
+	>>> add_integer(1, "Cisfun")
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+	>>> add_integer("Cisfun")
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>> add_integer('a', 'b')
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>> add_integer("cisfun", "cisnotfun")
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>> add_integer(None)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+
+# Testing the structure
+
+	>>> add_integer([], ())
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>> add_integer((20, 10))
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>> add_integer([2, 10], "String")
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
