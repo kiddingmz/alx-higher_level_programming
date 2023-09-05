@@ -1,0 +1,63 @@
+# 4-print_square.txt
+
+How to use 4-print_square.py
+===========================
+
+This module represent the square-printing function
+
+Usage
+=====
+
+Importing function from the module:
+	>>> print_square = __import__('4-print_square').print_square
+
+# Testing the integer values
+
+    >>> print_square(1)
+    #
+
+    >>> print_square(4)
+    ####
+    ####
+    ####
+    ####
+
+    >>> print_square(10)
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+    ##########
+
+    >>> print_square(0)
+
+# Testing invalid sizes
+
+    >>> print_square("cisfun")
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(2.5)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(None)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square(-12)
+    Traceback (most recent call last):
+    ValueError: size must be >= 0
+
+    >>> print_square(-1.5)
+    Traceback (most recent call last):
+    TypeError: size must be an integer
+
+    >>> print_square()
+    Traceback (most recent call last):
+    TypeError: print_square() missing 1 required positional argument: 'size'
