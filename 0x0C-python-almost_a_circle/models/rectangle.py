@@ -21,7 +21,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        """Set the with"""
+        """Set a with"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -30,14 +30,42 @@ class Rectangle(Base):
 
     @property
     def height(self):
-        """Return height"""
+        """Return a height"""
         return self.__height
 
     @height.setter
     def height(self, value):
-        """Set the height"""
+        """Set a height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
+
+    @property
+    def x(self):
+        """Return a x"""
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """Set a x"""
+        if type(value) is not int:
+            raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
+        self.__x = value
+
+    @property
+    def y(self):
+        """Return a y"""
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """Set a y"""
+        if type(value) is not int:
+            raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
+        self.__y = value
