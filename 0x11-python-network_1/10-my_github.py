@@ -15,8 +15,9 @@ def main(argv):
     try:
         profile_info = response.json()
         print(profile_info['id'])
-    except:
+    except Exception:
         print('None')
+
 
 if __name__ == "__main__":
     main(argv)
